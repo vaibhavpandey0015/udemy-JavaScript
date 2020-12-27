@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rupeeToDollarCalc</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function calculate(form){
+            form.dollar.value = form.inr.value / 70
+               
+        }
+    </script>
+
+    <form method="post" action="">
+        <table>
+            <tr>
+                <td>Enter your Ruppe in INR:</td>
+                <td><input type="text" name="inr" size=15></td>
+            </tr>
+            <tr>
+               
+                <td><input type="button" value="calculate" onclick="calculate(this.form)">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Amount in Dollar:</td>
+                <td> <input type="text" name="dollar" size=15> 
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
