@@ -1,2 +1,2 @@
 # udemy-JavaScript
-This is practise codes during my udemy course odf JavaScript
+These are practice codes during my udemy course of JavaScriptScript
