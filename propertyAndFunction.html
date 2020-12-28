@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propertyAndFunction</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h5 id="random"></h5>
+    <h4 id="min"></h4>
+    <h4 id="max"></h4>
+    <h4 id="round"></h4>
+    <h4 id="floor"></h4>
+    <h4 id="ceil"></h4>
+    <script>
+        var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo").innerHTML = text.length //property 
+                                                    + "<br>" + text.toLocaleLowerCase()  //Function
+                                                    + "<br>" + text.toLocaleUpperCase()
+                                                    + "<br>" + text.link("https://github.com/vaibhavpandey0015")
+                                                    + "<br>" + text.strike()
+                                                    + "<br>" + text.fontsize(23)
+                                                    + "<br>" + text.fontcolor("#ff0000");
+
+        document.getElementById("random").innerHTML = Math.random()
+                                                      + "<br>" + Math.sin(45)
+                                                      + "<br>" + Math.sqrt(16)
+                                                      + "<br>" + Math.pow(2,3)
+    
+        document.getElementById("min").innerHTML = Math.min(1, 2, -12, 34, 4.7, -11.59, -12.1)
+        document.getElementById("max").innerHTML = Math.max(1, 2, -12, 34, 4.7, -11.59, -12.1)
+        document.getElementById("round").innerHTML = Math.round(Math.random()* 10)    // random number between 0 to 10 (including 0 and 10)
+        document.getElementById("floor").innerHTML = Math.floor(15.6)
+        document.getElementById("ceil").innerHTML = Math.ceil(15.1)
+    </script>
+</body>
+</html>
